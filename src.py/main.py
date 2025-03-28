@@ -17,7 +17,7 @@ def iniciar_registro():
     pass
 def registro_lectura(): 
     try:
-        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")  # se tiene en cuenta la hora y fecha para el ciclo
+        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")  # Se tiene en cuenta el año,mes,día y hora para el ciclo
 
         with open('registro_UCI.log', 'a', encoding='utf-8') as registro: 
             status = "VALIDA" 
