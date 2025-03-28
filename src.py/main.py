@@ -44,6 +44,13 @@ def analizar_ritmo(paciente):
     elif paciente['ritmo_actual'] > FRECUENCIA_CARDIACA_MAXIMA:
         paciente['alertas'].append(f"Taquicardia alarmante: {paciente['ritmo_actual']:.1f} bpm")
 
+# Inicializa el archivo de registro .log para almacenar las lecturas
+def iniciar_registro():
+    try:
+        with open('registro_UCI.log', 'w', encoding='utf-8') as registro:
+            registro.write("Registro de Monitoreo UCI/UCE - Protocolo NCC MERP\n")
+    except Exception as e:
+        print(f"Error en simulación: {str(e)}")
 
 def registro_lectura():
     pass
