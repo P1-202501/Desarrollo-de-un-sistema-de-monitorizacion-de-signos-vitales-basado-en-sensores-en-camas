@@ -15,11 +15,6 @@ def simular_lecturas():
 def validar_movimiento(movimiento):
     return movimiento <= UMBRAL_MOVIMIENTO
  
-# Verifica si el movimiento está dentro del umbral permitido
-
-def validar_movimiento(movimiento):
-    return movimiento <= UMBRAL_MOVIMIENTO
- 
 # Analiza la frecuencia cardíaca y detecta anomalías
 
 def analizar_ritmo(paciente):
