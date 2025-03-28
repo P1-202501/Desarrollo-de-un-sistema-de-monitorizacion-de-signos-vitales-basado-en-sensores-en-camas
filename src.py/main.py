@@ -6,7 +6,13 @@ FRECUENCIA_CARDIACA_MINIMA = 60
 FRECUENCIA_CARDIACA_MAXIMA = 100
 
 def inicializar_paciente():
-    pass
+    return {
+        'ritmo_actual': None,
+        'movimiento_actual': None,
+        'alerta': []
+    }
+
+
 def simular_lecturas():
     pass
 
