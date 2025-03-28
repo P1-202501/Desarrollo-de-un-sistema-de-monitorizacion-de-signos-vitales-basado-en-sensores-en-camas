@@ -4,6 +4,7 @@ import random
 UMBRAL_MOVIMIENTO = 0.5
 RITMO_MINIMO = 60
 RITMO_MAXIMO = 100
+contador = 0
 
 def inicializar_paciente():
     pass
@@ -68,3 +69,4 @@ def main():
 
 if __name__ == 'main': #con esto hacemos que el codigo inicie por la funcion main()
     main()
+    print("Hola!")
