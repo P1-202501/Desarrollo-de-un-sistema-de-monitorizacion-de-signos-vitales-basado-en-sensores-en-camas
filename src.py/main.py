@@ -68,3 +68,4 @@ def main():
 
 if __name__ == 'main': #con esto hacemos que el cdigo inicie por la funcion main()
     main()
+    print("Hola!")
