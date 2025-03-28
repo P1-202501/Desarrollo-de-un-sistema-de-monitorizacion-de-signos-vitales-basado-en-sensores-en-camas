@@ -15,8 +15,33 @@ def analizar_ritmo():
     pass
 def iniciar_registro():
     pass
-def registro_lectura():
-    pass
+def registro_lectura(): 
+    try:
+        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")  # se tiene en cuenta la hora y fecha para el ciclo
+
+        with open('registro_UCI.log', 'a', encoding='utf-8') as registro: 
+            status = "VALIDA" 
+            if validar_movimiento(paciente['movimiento_actual']):
+                status = "VALIDA" 
+            else:
+                status ="NO VALIDA"
+        
+            registro.write(f"\n{timestamp} | Estado: {status}")
+            registro.write(f" | Movimiento: {paciente['movimiento_actual']:.2f} G")  
+        
+            if status == "VALIDA":
+                registro.write(f" | Frecuencia cardiaca: {paciente['ritmo_actual']:.1f} bpm")
+                print(f"[LECTURA] Frecuencia cardíaca: {paciente['ritmo_actual']:.1f} bpm")
+        
+            if paciente['alertas']:
+                registro.write(f" | ALERTAS: {', '.join(paciente['alertas'])}")
+                for alerta in paciente['alertas']:
+                    print(f"[CRITICO] {alerta}")
+                paciente['alertas'].clear()
+                
+    except Exception as e:
+        print(f"Error en simulación: {str(e)}")  
+    
 def main():  
     paciente = inicializar_paciente() 
     inicio = time.time()
@@ -42,4 +67,4 @@ def main():
         
 
 if __name__ == 'main': #con esto hacemos que el cdigo inicie por la funcion main()
-    main
+    main()
