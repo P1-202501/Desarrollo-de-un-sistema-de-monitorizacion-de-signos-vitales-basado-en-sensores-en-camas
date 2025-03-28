@@ -16,9 +16,11 @@ def analizar_ritmo():
     pass
 def iniciar_registro():
     pass
+
 # def registro_lectura(): 
     # try:
     #     timestamp = time.strftime("%Y-%m-%d %H:%M:%S")  # se tiene en cuenta la hora y fecha para el ciclo
+
 
     #     with open('registro_UCI.log', 'a', encoding='utf-8') as registro: 
     #         status = "VALIDA" 
@@ -68,5 +70,6 @@ def main():
         
 
 if __name__ == 'main': #con esto hacemos que el codigo inicie por la funcion main()
+
     main()
     print("Hola!")
