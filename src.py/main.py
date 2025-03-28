@@ -14,9 +14,17 @@ def inicializar_paciente():
 
 
 def simular_lecturas():
-    pass
+    try:
+        movimiento = random.uniform(0, 1)
+        frecuencia_cardiaca_base = 70 + random.uniform(-15, 35)
+        return movimiento, max(40, min(140, frecuencia_cardiaca_base))
+    
+    except Exception as e:
+        print(f"Error en simulación: {str(e)}")
+        return None, None
+        
 
- # Verifica si el movimiento está dentro del umbral permitido
+# Verifica si el movimiento está dentro del umbral permitido
 
 def validar_movimiento(movimiento):
     return movimiento <= UMBRAL_MOVIMIENTO
