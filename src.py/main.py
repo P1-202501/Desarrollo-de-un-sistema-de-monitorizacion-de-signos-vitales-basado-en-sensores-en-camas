@@ -1,9 +1,10 @@
 import time
 import random
 
-UMBRAL_MOVIMIENTO = 0.5
-RITMO_MINIMO = 60
-RITMO_MAXIMO = 100
+#Constantes 
+UMBRAL_MOVIMIENTO = 0.5  #valor límite 0.5, toma valores >0.5
+FRECUENCIA_CARDIACA_MINIMA = 60  #valores limites (max, min) que puede tomar       
+FRECUENCIA_CARDIACA_MAXIMA = 100  
 contador = 0
 
 def inicializar_paciente():
