@@ -8,9 +8,22 @@ FRECUENCIA_CARDIACA_MAXIMA = 100
 contador = 0
 
 def inicializar_paciente():
-    pass
+    return {
+        'ritmo_actual': None,
+        'movimiento_actual': None,
+        'aletas': []
+    }
+
 def simular_lecturas():
-    pass
+    try:
+        movimiento = random.uniform(0, 1)
+        frecuencia_cardiaca_base = 70 + random.uniform(-15, 35)
+        return movimiento, max(40, min(140, frecuencia_cardiaca_base))
+    
+    except Exception as e:
+        print(f"Error en simulación: {str(e)}")
+        return None, None
+
 def validar_movimiento():
     pass
 def analizar_ritmo():
@@ -60,7 +73,7 @@ def main():
             paciente['ritmo_actual'] = ritmo 
             
             analizar_ritmo(paciente)
-            # registro_lectura(paciente)
+            registro_lectura(paciente)
             time.sleep(1) 
         
         print('Monitoreo finalizado')
