@@ -18,16 +18,12 @@
 #### Interfaz simple en consola: El usuario puede ver los valores de los signos vitales en tiempo real. 👥
 
 ### 🏥 Pasos para ejecutar la solución en un entorno real 
-#### 👩‍⚕️Instruciones para los profesionales de la salud:
+#### 👩‍⚕️👨‍💻 Instruciones para los profesionales de la salud e ingenieros biomédicos:
 #### 1️⃣ Encender el sistema de monitoreo.
 #### 2️⃣ Visualizar en tiempo real los signos vitales en la interfaz.
-#### 3️⃣ Definir umbrales para advertencias en caso de valores anormales.
-#### 4️⃣ Detener el monitoreo cuando sea necesario.
-
-#### 👨‍💻Instruciones para los ingenieros biomédicos:
-#### 1️⃣ Verificar la conexión de los sensores con el sistema.
-#### 2️⃣ Ajustar parámetros de filtrado para optimizar la reducción de ruido.
-#### 3️⃣ Revisar el archivo monitor_vitales.log para analizar datos históricos y detectar problemas.
+#### 3️⃣ Observar advertencias en caso de valores anormales.
+#### 4️⃣ Revisar el archivo registro_UCI.log para analizar datos históricos y detectar problemas.
+#### 5️⃣ Detener el monitoreo cuando sea necesario.
 
 ## ✔️DEFINICIONES CLAVE
 ### Concepto📋📚
@@ -41,4 +37,8 @@
 #### Chequeo, registro y análisis de signos vitales.
 
 ## ✔️REFERENCIAS BIBLIOGRÁFICAS 🔍
-Recmanik M, Martinek R, Nedoma J, Jaros R, Pelc M, Hajovsky R, Velicka J, Pies M, Sevcakova M, Kawala-Sterniuk A. A Review of Patient Bed Sensors for Monitoring of Vital Signs. Sensors (Basel). 2024 Jul 23;24(15). Tomado de:https://pubmed.ncbi.nlm.nih.gov/39123813/
+#### 🐈‍⬛ Recmanik M, Martinek R, Nedoma J, Jaros R, Pelc M, Hajovsky R, Velicka J, Pies M, Sevcakova M, Kawala-Sterniuk A. A Review of Patient Bed Sensors for Monitoring of Vital Signs. Sensors (Basel). 2024 Jul 23;24(15). Tomado de: https://pubmed.ncbi.nlm.nih.gov/39123813/
+#### 🐈 M. Raurell-Torredà, E. Regaira-Martínez, R. Ferrer-Roca, JD Martí, E. Blazquez-Martínez. (2021). Algoritmo de movilización temprana para el paciente crítico. Recomendaciones de expertos. Enfermería Intensiva. Tomado de https://www.elsevier.es/es-revista-enfermeria-intensiva-142-articulo-algoritmo-movilizacion-temprana-el-paciente-S1130239921000031
+#### 🐈‍⬛ Adobe. (s.f.). ¿Qué es un archivo LOG y cómo abrirlo? Adobe Acrobat. Toamdo de: https://www.adobe.com/es/acrobat/resources/document-files/text-files/log-file.html
+#### 🐈Hamilton, R. M., Joglar, J. A., Kim, R. J., Lee, R., Marine, J. E., McLeod, C. J., Oken, K. R., Patton, K. K., Pellegrini, C. N., Selzman, K. A., Thompson, A., & Varosy, P. D. (2019). guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay: A report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Rhythm Society. Journal of the American College of Cardiology, 74(7). Tomado de: https://doi.org/10.1016/j.jacc.2018.10.044
+#### 🐈‍⬛ Smith, S. C. Jr., Spencer, C. C., Stafford, R. S., Taler, S. J., Thomas, R. J., Williams, K. A. Sr., Williamson, J. D., & Wright, J. T. Jr. (2018).guideline for the prevention, detection, evaluation, and management of high blood pressure in adults: A report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines. Journal of the American College of Cardiology, 71(19). Tomado de: https://doi.org/10.1016/j.jacc.2017.11.006
