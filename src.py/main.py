@@ -77,11 +77,10 @@ def registro_lectura(paciente):
                     print(f"[CRITICO] {alerta}")
                 paciente['alertas'].clear()
     except Exception as e:
-<<<<<<< HEAD
-        print(f"Error en simulación: {str(e)}")  
-    
-# Función principal que ejecuta el monitoreo
 
+        print(f"Error en simulación: {str(e)}")
+
+# Función principal que ejecuta el monitoreo
 def menu():
     print("\n" + "=" * 50)
     print("\t🩺 Sistema de Monitoreo para UCI/UCE")
@@ -150,30 +149,3 @@ def main():
 #Con esto hacemos que el codigo inicie por la función main()
 if __name__ == "__main__": 
     main()
-=======
-        print(f"Error en simulación: {str(e)}")
-
-
-# Inicia y ejecuta un monitoreo durante 60 segundos
-def main():
-    paciente = inicializar_paciente()
-    inicio = time.time()
-    print('Sistems de monitoreo para UCI/UCE')
-    print('Iniciando monitoreo durante 60 segundos')
-    try:
-        iniciar_registro()
-        while (time.time() - inicio) < 60:
-            movimiento, ritmo = simular_lecturas()
-            paciente['movimiento_actual'] = movimiento
-            paciente['ritmo_actual'] = ritmo
-            analizar_ritmo(paciente)
-            registro_lectura(paciente)
-            time.sleep(1)
-        print('Monitoreo finalizado')
-    except KeyboardInterrupt:
-        print('Interrupcion de emergencia')
-
-# Con esto hacemos que el codigo inicie por la funcion main()
-if __name__ == '__main__':
-    main()
->>>>>>> 2c52617c5a649012063bb96c4de7b2bca4237d9c
