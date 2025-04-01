@@ -34,7 +34,9 @@ def analizar_ritmo(paciente):
     if paciente["movimiento_actual"] is None or paciente["ritmo_actual"] is None:
         return
     if not validar_movimiento(paciente["movimiento_actual"]):
-        paciente["alertas"].append("Afectado por movimiento - Lectura invalidada")
+        paciente["alertas"].append(
+            "Afectado por movimiento - Lectura invalidada"
+            )
         return
     if paciente["ritmo_actual"] < FRECUENCIA_CARDIACA_MINIMA:
         paciente["alertas"].append(
@@ -85,6 +87,7 @@ def registro_lectura(paciente):
 
         print(f"Error en simulación: {str(e)}")
 
+
 # Función principal que ejecuta el monitoreo
 def menu():
     print("\n" + "=" * 50)
@@ -97,42 +100,51 @@ def menu():
     print("=" * 50)
     return input("🔹 Seleccione una opción: ")
 
+
+# Interacción con el usuario a patir de un menú
 def main():
     ejecutando = True
     while ejecutando:
         paciente = inicializar_paciente()
-        numero_registros = 60 
-    
+        numero_registros = 60
         print("\n" + "=" * 50)
         print("\t🚀 Iniciando Sistema de Monitoreo...\n")
         print("=" * 50)
-    
         try:
             seleccion = menu()
 
             if seleccion == '1':
-                print("\n✅ Monitoreo iniciado con configuración por defecto (60 segundos) ✅\n")
+                print(
+                    "\n✅ Monitoreo iniciado con configuración por defecto (60 segundos) ✅\n"
+                    )
 
             elif seleccion == '2':
                 try:
-                    numero_registros = int(input("⏱️ Ingrese el tiempo de monitoreo en segundos: "))
+                    numero_registros = int(input(
+                        "⏱️ Ingrese el tiempo de monitoreo en segundos: "
+                        ))
                 except ValueError:
-                    print("\n⚠️ Entrada inválida. Usando 60 lecturas por defecto. ⚠️\n") # Se hace una lectura cada segundo
-                    
+                    print(
+                        "\n⚠️ Entrada inválida. Usando 60 lecturas por defecto. ⚠️\n"
+                        )  # Se hace una lectura cada segundo
                 if numero_registros <= 0:
-                    print("\n⚠️ Tiempo inválido. Usando 60 lecturas por defecto. ⚠️\n")
+                    print(
+                        "\n⚠️ Tiempo inválido. Usando 60 lecturas por defecto. ⚠️\n"
+                        )
                     numero_registros = 60
                 else:
-                    print(f"\n⏳ Monitoreo configurado para {numero_registros} segundos. ⏳\n")
+                    print(
+                        f"\n⏳ Monitoreo configurado para {numero_registros} segundos. ⏳\n"
+                        )
 
             elif seleccion == '3':
                 print("\n👋 Saliendo del sistema... 👋\n")
                 ejecutando = False
                 break
-            
             else:
-                print("\n⚠️ Opción inválida. Inicializando monitoreo por defecto. ⚠️\n")
-            
+                print(
+                    "\n⚠️ Opción inválida. Inicializando monitoreo por defecto. ⚠️\n"
+                    )
             iniciar_registro()
             print("\n🟢 Iniciando monitoreo... 🟢\n")
 
@@ -140,18 +152,17 @@ def main():
                 movimiento, ritmo = simular_lecturas()
                 paciente['movimiento_actual'] = movimiento
                 paciente['ritmo_actual'] = ritmo
-            
                 analizar_ritmo(paciente)
-                registrar_lectura(paciente)
-            
-                time.sleep(1) # Espera un segundo antes de la siguiente medición
-        
-            print("\n✅ Monitoreo completado: Datos listos para revisión médica ✅\n")
-    
+                registro_lectura(paciente)
+                # Espera un segundo antes de la siguiente medición
+                time.sleep(1)
+            print(
+                "\n✅ Monitoreo completado: Datos listos para revisión médica ✅\n"
+                )
         except KeyboardInterrupt:
             print("\n🛑 Interrupción de emergencia activada 🛑\n")
 
-#Con esto hacemos que el codigo inicie por la función main()
-if __name__ == "__main__": 
 
+# Con esto hacemos que el codigo inicie por la función main()
+if __name__ == "__main__":
     main()
