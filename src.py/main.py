@@ -1,12 +1,13 @@
+# Librerías
 import time
 import random
 
-#Constantes 
+# Constantes 
 UMBRAL_MOVIMIENTO = 0.5  
 FRECUENCIA_CARDIACA_MINIMA = 60        
 FRECUENCIA_CARDIACA_MAXIMA = 100  
 
-
+# Diccionario para almacenar los datos del paciente
 def inicializar_paciente():
     return {
         'ritmo_actual': None,
@@ -14,6 +15,7 @@ def inicializar_paciente():
         'alertas': []
     }
 
+# Generación de datos aleatorios 
 def simular_lecturas():
     try:
         movimiento = random.uniform(0, 1)
@@ -24,13 +26,11 @@ def simular_lecturas():
         print(f"Error en simulación: {str(e)}")
         return None, None
 
- # Verifica si el movimiento está dentro del umbral permitido
-
+# Verifica si el movimiento está dentro del umbral permitido
 def validar_movimiento(movimiento):
     return movimiento <= UMBRAL_MOVIMIENTO
  
 # Analiza la frecuencia cardíaca y detecta anomalías
-
 def analizar_ritmo(paciente):
     if paciente['movimiento_actual'] is None or paciente['ritmo_actual'] is None:
         return
@@ -52,6 +52,7 @@ def iniciar_registro():
     except Exception as e:
         print(f"Error en simulación: {str(e)}")
 
+# Registro de datos en un archivo .log
 def registro_lectura(paciente): 
     try:
         timestamp = time.strftime("%Y-%m-%d %H:%M:%S")  # se tiene en cuenta la hora y fecha para el ciclo
@@ -78,7 +79,8 @@ def registro_lectura(paciente):
                 
     except Exception as e:
         print(f"Error en simulación: {str(e)}")  
-    
+
+# Inicia y ejecuta un monitoreo durante 60 segundos    
 def main():  
     paciente = inicializar_paciente() 
     inicio = time.time()
@@ -102,8 +104,7 @@ def main():
     except KeyboardInterrupt:
         print('Interrupcion de emergencia')
         
-
-if __name__ == '__main__': #Con esto hacemos que el codigo inicie por la funcion main()
-
+# Con esto hacemos que el codigo inicie por la funcion main()
+if __name__ == '__main__':
     main()
 
