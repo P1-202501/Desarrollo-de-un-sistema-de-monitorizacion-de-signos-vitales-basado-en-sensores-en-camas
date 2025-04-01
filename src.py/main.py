@@ -2,8 +2,8 @@ import time
 import random
 
 #Constantes 
-UMBRAL_MOVIMIENTO = 0.5  #valor límite 0.5, toma valores >0.5
-FRECUENCIA_CARDIACA_MINIMA = 60  #valores limites (max, min) que puede tomar       
+UMBRAL_MOVIMIENTO = 0.5  
+FRECUENCIA_CARDIACA_MINIMA = 60        
 FRECUENCIA_CARDIACA_MAXIMA = 100  
 
 
@@ -11,7 +11,7 @@ def inicializar_paciente():
     return {
         'ritmo_actual': None,
         'movimiento_actual': None,
-        'aletas': []
+        'alertas': []
     }
 
 def simular_lecturas():
@@ -52,7 +52,7 @@ def iniciar_registro():
     except Exception as e:
         print(f"Error en simulación: {str(e)}")
 
-def registro_lectura(): 
+def registro_lectura(paciente): 
     try:
         timestamp = time.strftime("%Y-%m-%d %H:%M:%S")  # se tiene en cuenta la hora y fecha para el ciclo
 
@@ -103,7 +103,7 @@ def main():
         print('Interrupcion de emergencia')
         
 
-if __name__ == 'main': #con esto hacemos que el codigo inicie por la funcion main()
+if __name__ == '__main__': #Con esto hacemos que el codigo inicie por la funcion main()
 
     main()
 
