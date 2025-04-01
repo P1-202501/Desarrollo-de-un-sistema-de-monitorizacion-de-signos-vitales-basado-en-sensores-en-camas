@@ -17,7 +17,7 @@ def inicializar_paciente():
 def simular_lecturas():
     try:
         movimiento = random.uniform(0, 1)
-        frecuencia_cardiaca_base = 70 + random.uniform(-15, 35)
+        frecuencia_cardiaca_base = 70 + random.randint(-15, 35)
         return movimiento, max(40, min(140, frecuencia_cardiaca_base))
     except Exception as e:
         print(f"Error en simulación: {str(e)}")
@@ -38,14 +38,11 @@ def analizar_ritmo(paciente):
             "Afectado por movimiento - Lectura invalidada"
             )
         return
-    if paciente["ritmo_actual"] < FRECUENCIA_CARDIACA_MINIMA:
-        paciente["alertas"].append(
-            f"Bradicardia crítica: {paciente['ritmo_actual']:.1f} bpm"
-        )
-    elif paciente["ritmo_actual"] > FRECUENCIA_CARDIACA_MAXIMA:
-        paciente["alertas"].append(
-            f"Taquicardia alarmante: {paciente['ritmo_actual']:.1f} bpm"
-        )
+    ritmo_entero = int(paciente["ritmo_actual"])
+    if ritmo_entero < FRECUENCIA_CARDIACA_MINIMA:
+        paciente["alertas"].append(f"Bradicardia crítica: {ritmo_entero} bpm")
+    elif ritmo_entero > FRECUENCIA_CARDIACA_MAXIMA:
+        paciente["alertas"].append(f"Taquicardia alarmante: {ritmo_entero} bpm")
 
 
 # Inicializa el archivo de registro .log para almacenar las lecturas
@@ -72,12 +69,9 @@ def registro_lectura(paciente):
             registro.write(f"\n{timestamp} | Estado: {status}")
             registro.write(f" | Movimiento: {paciente['movimiento_actual']:.2f} G")
             if status == "VALIDA":
-                registro.write(
-                    f" | Frecuencia cardiaca: {paciente['ritmo_actual']:.1f} bpm"
-                )
-                print(
-                    f"[LECTURA] Frecuencia cardíaca: {paciente['ritmo_actual']:.1f} bpm"
-                )
+                ritmo_entero = int(paciente["ritmo_actual"])
+                registro.write(f" | Frecuencia cardiaca: {ritmo_entero} bpm")
+                print(f"[LECTURA] Frecuencia cardíaca: {ritmo_entero} bpm")
             if paciente["alertas"]:
                 registro.write(f" | ALERTAS: {', '.join(paciente['alertas'])}")
                 for alerta in paciente["alertas"]:
