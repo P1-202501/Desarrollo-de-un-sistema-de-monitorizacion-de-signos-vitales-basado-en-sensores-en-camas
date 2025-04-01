@@ -79,31 +79,73 @@ def registro_lectura():
     except Exception as e:
         print(f"Error en simulación: {str(e)}")  
     
-def main():  
-    paciente = inicializar_paciente() 
-    inicio = time.time()
+# Función principal que ejecuta el monitoreo
+
+def menu():
+    print("\n" + "=" * 50)
+    print("\t🩺 Sistema de Monitoreo para UCI/UCE")
+    print("\t   📋 Protocolo NCC MERP")
+    print("=" * 50)
+    print("[1] ▶️ Iniciar monitoreo")
+    print("[2] ⏳ Seleccionar tiempo de monitoreo manualmente")
+    print("[3] ❌ Salir")
+    print("=" * 50)
+    return input("🔹 Seleccione una opción: ")
+
+def main():
+    ejecutando = True
+    while ejecutando:
+        paciente = inicializar_paciente()
+        numero_registros = 60 
     
-    print('Sistems de monitoreo para UCI/UCE')
-    print('Iniciando monitoreo durante 60 segundos')
-   
-    try:
-        iniciar_registro()
-        while (time.time() - inicio) < 60: 
-            movimiento, ritmo = simular_lecturas()
-            paciente['movimiento_actual'] = movimiento 
-            paciente['ritmo_actual'] = ritmo 
+        print("\n" + "=" * 50)
+        print("\t🚀 Iniciando Sistema de Monitoreo...\n")
+        print("=" * 50)
+    
+        try:
+            seleccion = menu()
+
+            if seleccion == '1':
+                print("\n✅ Monitoreo iniciado con configuración por defecto (60 segundos) ✅\n")
+
+            elif seleccion == '2':
+                try:
+                    numero_registros = int(input("⏱️ Ingrese el tiempo de monitoreo en segundos: "))
+                except ValueError:
+                    print("\n⚠️ Entrada inválida. Usando 60 lecturas por defecto. ⚠️\n") # Se hace una lectura cada segundo
+                    
+                if numero_registros <= 0:
+                    print("\n⚠️ Tiempo inválido. Usando 60 lecturas por defecto. ⚠️\n")
+                    numero_registros = 60
+                else:
+                    print(f"\n⏳ Monitoreo configurado para {numero_registros} segundos. ⏳\n")
+
+            elif seleccion == '3':
+                print("\n👋 Saliendo del sistema... 👋\n")
+                ejecutando = False
+                break
             
-            analizar_ritmo(paciente)
-            registro_lectura(paciente)
-            time.sleep(1) 
-        
-        print('Monitoreo finalizado')
-        
-    except KeyboardInterrupt:
-        print('Interrupcion de emergencia')
-        
+            else:
+                print("\n⚠️ Opción inválida. Inicializando monitoreo por defecto. ⚠️\n")
+            
+            iniciar_registro()
+            print("\n🟢 Iniciando monitoreo... 🟢\n")
 
-if __name__ == 'main': #con esto hacemos que el codigo inicie por la funcion main()
+            for i in range(numero_registros):
+                movimiento, ritmo = simular_lecturas()
+                paciente['movimiento_actual'] = movimiento
+                paciente['ritmo_actual'] = ritmo
+            
+                analizar_ritmo(paciente)
+                registrar_lectura(paciente)
+            
+                time.sleep(1) # Espera un segundo antes de la siguiente medición
+        
+            print("\n✅ Monitoreo completado: Datos listos para revisión médica ✅\n")
+    
+        except KeyboardInterrupt:
+            print("\n🛑 Interrupción de emergencia activada 🛑\n")
 
+#Con esto hacemos que el codigo inicie por la función main()
+if __name__ == "__main__": 
     main()
-
