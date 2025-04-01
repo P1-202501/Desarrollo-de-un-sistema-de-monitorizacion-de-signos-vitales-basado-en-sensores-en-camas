@@ -88,7 +88,7 @@ def registro_lectura(paciente):
         print(f"Error en simulación: {str(e)}")
 
 
-# Función principal que ejecuta el monitoreo
+# Interacción con el usuario a patir de un menú
 def menu():
     print("\n" + "=" * 50)
     print("\t🩺 Sistema de Monitoreo para UCI/UCE")
@@ -101,7 +101,7 @@ def menu():
     return input("🔹 Seleccione una opción: ")
 
 
-# Interacción con el usuario a patir de un menú
+# Función principal que ejecuta el monitoreo
 def main():
     ejecutando = True
     while ejecutando:
