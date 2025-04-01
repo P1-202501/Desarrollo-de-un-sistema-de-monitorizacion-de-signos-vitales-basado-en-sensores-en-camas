@@ -1,8 +1,61 @@
 Registro de Monitoreo UCI/UCE - Protocolo NCC MERP
 
-2025-03-28 22:05:11 | Estado: NO VALIDA | Movimiento: 0.90 G | ALERTAS: Afectado por movimiento - Lectura invalidada
-2025-03-28 22:05:12 | Estado: NO VALIDA | Movimiento: 0.55 G | ALERTAS: Afectado por movimiento - Lectura invalidada
-2025-03-28 22:05:13 | Estado: VALIDA | Movimiento: 0.27 G | Frecuencia cardiaca: 85.1 bpm
-2025-03-28 22:05:14 | Estado: NO VALIDA | Movimiento: 0.96 G | ALERTAS: Afectado por movimiento - Lectura invalidada
-2025-03-28 22:05:15 | Estado: NO VALIDA | Movimiento: 0.67 G | ALERTAS: Afectado por movimiento - Lectura invalidada
-2025-03-28 22:05:16 | Estado: VALIDA | Movimiento: 0.33 G | Frecuencia cardiaca: 105.0 bpm | ALERTAS: Taquicardia alarmante: 105.0 bpm
+2025-04-01 16:52:28 | Estado: VALIDA | Movimiento: 0.20 G | Frecuencia cardiaca: 74 bpm
+2025-04-01 16:52:29 | Estado: NO VALIDA | Movimiento: 0.85 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:30 | Estado: NO VALIDA | Movimiento: 0.56 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:31 | Estado: NO VALIDA | Movimiento: 0.93 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:32 | Estado: VALIDA | Movimiento: 0.38 G | Frecuencia cardiaca: 69 bpm
+2025-04-01 16:52:33 | Estado: VALIDA | Movimiento: 0.47 G | Frecuencia cardiaca: 104 bpm | ALERTAS: Taquicardia alarmante: 104 bpm
+2025-04-01 16:52:34 | Estado: NO VALIDA | Movimiento: 0.61 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:35 | Estado: VALIDA | Movimiento: 0.04 G | Frecuencia cardiaca: 93 bpm
+2025-04-01 16:52:36 | Estado: NO VALIDA | Movimiento: 0.83 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:37 | Estado: VALIDA | Movimiento: 0.24 G | Frecuencia cardiaca: 67 bpm
+2025-04-01 16:52:38 | Estado: VALIDA | Movimiento: 0.06 G | Frecuencia cardiaca: 79 bpm
+2025-04-01 16:52:39 | Estado: VALIDA | Movimiento: 0.29 G | Frecuencia cardiaca: 74 bpm
+2025-04-01 16:52:40 | Estado: NO VALIDA | Movimiento: 0.53 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:41 | Estado: VALIDA | Movimiento: 0.11 G | Frecuencia cardiaca: 71 bpm
+2025-04-01 16:52:42 | Estado: VALIDA | Movimiento: 0.32 G | Frecuencia cardiaca: 58 bpm | ALERTAS: Bradicardia crítica: 58 bpm
+2025-04-01 16:52:43 | Estado: VALIDA | Movimiento: 0.38 G | Frecuencia cardiaca: 100 bpm
+2025-04-01 16:52:44 | Estado: VALIDA | Movimiento: 0.04 G | Frecuencia cardiaca: 87 bpm
+2025-04-01 16:52:45 | Estado: VALIDA | Movimiento: 0.09 G | Frecuencia cardiaca: 97 bpm
+2025-04-01 16:52:46 | Estado: VALIDA | Movimiento: 0.03 G | Frecuencia cardiaca: 73 bpm
+2025-04-01 16:52:47 | Estado: NO VALIDA | Movimiento: 0.73 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:48 | Estado: NO VALIDA | Movimiento: 0.89 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:49 | Estado: VALIDA | Movimiento: 0.45 G | Frecuencia cardiaca: 69 bpm
+2025-04-01 16:52:50 | Estado: VALIDA | Movimiento: 0.27 G | Frecuencia cardiaca: 79 bpm
+2025-04-01 16:52:51 | Estado: NO VALIDA | Movimiento: 0.90 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:52 | Estado: VALIDA | Movimiento: 0.00 G | Frecuencia cardiaca: 82 bpm
+2025-04-01 16:52:53 | Estado: NO VALIDA | Movimiento: 0.55 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:54 | Estado: NO VALIDA | Movimiento: 0.74 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:55 | Estado: NO VALIDA | Movimiento: 0.92 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:56 | Estado: NO VALIDA | Movimiento: 0.75 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:57 | Estado: NO VALIDA | Movimiento: 0.93 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:52:58 | Estado: VALIDA | Movimiento: 0.32 G | Frecuencia cardiaca: 81 bpm
+2025-04-01 16:52:59 | Estado: VALIDA | Movimiento: 0.10 G | Frecuencia cardiaca: 100 bpm
+2025-04-01 16:53:00 | Estado: VALIDA | Movimiento: 0.01 G | Frecuencia cardiaca: 89 bpm
+2025-04-01 16:53:01 | Estado: NO VALIDA | Movimiento: 0.67 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:02 | Estado: NO VALIDA | Movimiento: 0.54 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:03 | Estado: VALIDA | Movimiento: 0.25 G | Frecuencia cardiaca: 91 bpm
+2025-04-01 16:53:04 | Estado: VALIDA | Movimiento: 0.16 G | Frecuencia cardiaca: 89 bpm
+2025-04-01 16:53:05 | Estado: VALIDA | Movimiento: 0.11 G | Frecuencia cardiaca: 86 bpm
+2025-04-01 16:53:06 | Estado: NO VALIDA | Movimiento: 0.88 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:07 | Estado: NO VALIDA | Movimiento: 0.94 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:08 | Estado: VALIDA | Movimiento: 0.36 G | Frecuencia cardiaca: 80 bpm
+2025-04-01 16:53:09 | Estado: NO VALIDA | Movimiento: 0.69 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:10 | Estado: NO VALIDA | Movimiento: 0.87 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:11 | Estado: NO VALIDA | Movimiento: 0.56 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:12 | Estado: NO VALIDA | Movimiento: 0.68 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:13 | Estado: VALIDA | Movimiento: 0.18 G | Frecuencia cardiaca: 91 bpm
+2025-04-01 16:53:14 | Estado: VALIDA | Movimiento: 0.33 G | Frecuencia cardiaca: 55 bpm | ALERTAS: Bradicardia crítica: 55 bpm
+2025-04-01 16:53:15 | Estado: VALIDA | Movimiento: 0.46 G | Frecuencia cardiaca: 83 bpm
+2025-04-01 16:53:16 | Estado: VALIDA | Movimiento: 0.48 G | Frecuencia cardiaca: 87 bpm
+2025-04-01 16:53:17 | Estado: NO VALIDA | Movimiento: 0.84 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:18 | Estado: VALIDA | Movimiento: 0.42 G | Frecuencia cardiaca: 61 bpm
+2025-04-01 16:53:19 | Estado: NO VALIDA | Movimiento: 0.72 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:20 | Estado: NO VALIDA | Movimiento: 0.77 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:21 | Estado: VALIDA | Movimiento: 0.40 G | Frecuencia cardiaca: 72 bpm
+2025-04-01 16:53:22 | Estado: NO VALIDA | Movimiento: 0.79 G | ALERTAS: Afectado por movimiento - Lectura invalidada
+2025-04-01 16:53:23 | Estado: VALIDA | Movimiento: 0.43 G | Frecuencia cardiaca: 70 bpm
+2025-04-01 16:53:24 | Estado: VALIDA | Movimiento: 0.31 G | Frecuencia cardiaca: 85 bpm
+2025-04-01 16:53:25 | Estado: VALIDA | Movimiento: 0.15 G | Frecuencia cardiaca: 79 bpm
+2025-04-01 16:53:26 | Estado: VALIDA | Movimiento: 0.37 G | Frecuencia cardiaca: 79 bpm
