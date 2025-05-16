@@ -13,17 +13,25 @@
 ### 🖥️ Pruebas de escritorio (Simulación y Validación Inicial)
 #### Generación de datos simulados: Se crean valores de signos vitales dentro y fuera de los rangos normales.🫀
 #### Procesamiento de señales: Se aplican filtros básicos para simular la reducción de ruido en los datos.💡
-#### Análisis de signos vitales: Se comparan con umbrales y se generan alertas si es necesario. 📊
+#### Análisis de signos vitales: Se comparan con umbrales y se generan alertas si es necesario. Solo se almacenan lecturas dentro de los rangos permitidos de un sensor. 📊
 #### Registro en log: Se guarda un historial de los datos procesados y alertas generadas en un archivo .log. 📝
-#### Interfaz simple en consola: El usuario puede ver los valores de los signos vitales en tiempo real. 👥
+#### Interfaz simple en consola: El usuario  interactúa con un menú que le permite selecionar el tiempo de monitoreo. 👥
+#### Visualización en tiempo real: Se genera una gráfica con matplotlib que muestra la evolución de los signos vitales válidos.📉
 
 ### 🏥 Pasos para ejecutar la solución en un entorno real 
 #### 👩‍⚕️👨‍💻 Instruciones para los profesionales de la salud e ingenieros biomédicos:
 #### 1️⃣ Encender el sistema de monitoreo.
-#### 2️⃣ Visualizar en tiempo real los signos vitales en la interfaz.
-#### 3️⃣ Observar advertencias en caso de valores anormales.
-#### 4️⃣ Revisar el archivo registro_UCI.log para analizar datos históricos y detectar problemas.
-#### 5️⃣ Detener el monitoreo cuando sea necesario.
+#### 2️⃣ Seleccionar una opción del menú en consola.
+#### 3️⃣ Ingresar el número en segundos que desea ejecutar en el monitoreo. Si se ingresa una letra o carácter inválido, el sistema mostrará un mensaje de error y volverá a pedir el valor.
+#### 4️⃣ Observar en pantalla la evolución de los signos vitales válidos. Se mostrará una gráfica en tiempo real.
+#### 5️⃣ Revisar el archivo registro_UCI.log para analizar datos históricos y detectar problemas.
+#### 6️⃣ Analizar el archivo usando las herramientas del sistema para:
+
+#### - Filtrar lecturas específicas.
+#### - Calcular promedios o estadísticas por grupo.
+#### -Ordenar, limpiar y transformar datos según necesidad clínica.
+
+#### 7️⃣ Detener el monitoreo desde el menú o cerrando el programa.
 
 ## ✔️DEFINICIONES CLAVE
 ### Concepto📋📚
